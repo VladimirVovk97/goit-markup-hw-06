@@ -32,6 +32,17 @@ ul {
   padding: 0;
   margin: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -229,7 +240,7 @@ a {
   cursor: pointer;
 }
 
-/* модалка */
+/* Модальное окно */
 .backdrop {
   position: fixed;
   top: 0;
@@ -258,7 +269,7 @@ a {
   padding: 40px;
 }
 
-/* кнопка закрыть модальное окно */
+/* Кнопка закрыть модальное окно */
 .modal-close-button {
   position: absolute;
   top: 8px;
@@ -280,7 +291,7 @@ a {
 
 .modal-close-button:hover,
 .modal-close-button:focus {
-  fill: var(--blue);
+  fill: var(--accent-color);
 }
 
 .order-service-header {
@@ -314,6 +325,7 @@ a {
 
 .form-feild-input-parts {
   position: relative;
+  cursor: pointer;
 }
 
 .form-feild-input {
@@ -334,7 +346,7 @@ a {
   position: absolute;
   left: 12px;
   top: 11px;
-  fill: black;
+  fill: var(--title-text-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -350,6 +362,7 @@ a {
 
 .form-feild textarea {
   margin-top: 4px;
+  margin-bottom: 10px;
   padding: 12px 16px;
   resize: none;
   height: 120px;
@@ -379,7 +392,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -389,11 +401,6 @@ a {
 }
 
 .policy-arrangement input[type="checkbox"] {
-  /*
-  -webkit-appearance: none;
-  position: absolute;
-  */
-
   position: absolute;
   width: 1px;
   height: 1px;
@@ -420,7 +427,7 @@ a {
 .checkbox-test:checked + .test-svg {
   background-color: var(--accent-color);
   border: 2px solid var(--accent-color);
-  background-image: url(../images/svg-icons/icon-check.svg);
+  background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
 }
@@ -467,19 +474,6 @@ a {
 }
 
 /* Секция Герой  */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* заголовки */
 
 /* секции */
 .section {
